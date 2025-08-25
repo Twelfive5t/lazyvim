@@ -24,3 +24,9 @@ vim.opt.listchars = {
   nbsp = "&", -- 非断行空格
 }
 vim.g.snacks_scroll = false
+vim.api.nvim_create_autocmd({ "InsertEnter", "InsertLeave" }, {
+  callback = function()
+    vim.fn.jobstart({ "im-select", "1033" }, { detach = true })
+    vim.fn.jobstart({ "im-select", "2052" }, { detach = true })
+  end,
+})
