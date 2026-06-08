@@ -15,15 +15,15 @@ return {
 
         -- 针对 darker 风格仅覆盖背景色
         colors = {
-          darker = { bg = "#23272e" },
+          darker = { bg = "#16191D" },
         },
 
         -- 直接覆盖调色盘，保留其他色阶
         palette_overrides = {
-          darker0   = "#23272e",   -- 覆盖 darker 模式下的第一层背景
-          dark0     = "#23272e",   -- 以防还有地方在用 dark0
-          bg1       = "#1e2227",
-          bg2       = "#23272e",
+          darker0   = "#16191D",   -- 覆盖 darker 模式下的第一层背景
+          dark0     = "#16191D",   -- 以防还有地方在用 dark0
+          bg1       = "#16191D",
+          bg2       = "#16191D",
           bg3       = "#2c313c",
           fg        = "#abb2bf",
           grey      = "#495162",
@@ -39,8 +39,8 @@ return {
         },
 
         highlights = {
-          Normal       = { bg = "#23272e" },
-          NormalNC     = { bg = "#23272e" },
+          Normal       = { bg = "#16191D" },
+          NormalNC     = { bg = "#16191D" },
           Visual       = { bg = "#677696" },
           CursorLine   = { bg = "#2c313c" },
           CursorLineNr = { fg = "#abb2bf", style = "bold" },
@@ -48,22 +48,22 @@ return {
           Search       = { bg = "#ffffff", fg = "#000000" },
           IncSearch    = { bg = "#d19a66" },
 
-          Pmenu        = { bg = "#1e2227", fg = "#abb2bf" },
+          Pmenu        = { bg = "#16191D", fg = "#abb2bf" },
           PmenuSel     = { bg = "#2c313a", fg = "#ffffff" },
           PmenuThumb   = { bg = "#747d91" },
 
           FloatBorder  = { fg = "#181a1f" },
-          NormalFloat  = { bg = "#1e2227" },
+          NormalFloat  = { bg = "#16191D" },
 
-          TabLine      = { bg = "#1e2227", fg = "#9da5b4" },
+          TabLine      = { bg = "#16191D", fg = "#9da5b4" },
           TabLineFill  = { bg = "#181a1f" },
-          TabLineSel   = { bg = "#23272e", fg = "#dcdcdc", style = "bold" },
+          TabLineSel   = { bg = "#16191D", fg = "#dcdcdc", style = "bold" },
 
-          StatusLine   = { bg = "#1e2227", fg = "#9da5b4" },
-          StatusLineNC = { bg = "#1e2227", fg = "#6b717d" },
+          StatusLine   = { bg = "#16191D", fg = "#9da5b4" },
+          StatusLineNC = { bg = "#16191D", fg = "#6b717d" },
 
           TelescopeBorder      = { fg = "#3e4452" },
-          TelescopePrompt      = { bg = "#1e2227" },
+          TelescopePrompt      = { bg = "#16191D" },
           TelescopePromptTitle = { fg = "#abb2bf", bg = "#404754" },
           TelescopePromptPrefix= { fg = "#4d78cc" },
           TelescopeResultsTitle= { fg = "#abb2bf", bg = "#21252b" },
