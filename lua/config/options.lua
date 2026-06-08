@@ -14,7 +14,7 @@ opt.relativenumber = false -- 是否显示相对行号
 opt.listchars = "space:·" -- 不可见字符的显示，这里只把空格显示为一个点
 vim.opt.listchars = {
   space = "·", -- 空格
---  eol = "$", -- 行尾符
+  --  eol = "$", -- 行尾符
   tab = ">-", -- 制表符
   trail = "·", -- 行尾空格
   lead = "·", -- 行首空格
@@ -23,7 +23,6 @@ vim.opt.listchars = {
   conceal = "+", -- 被隐藏的字符
   nbsp = "&", -- 非断行空格
 }
-vim.g.snacks_scroll = false -- 禁用 snacks 插件的滚动功能
 vim.api.nvim_create_autocmd({ "InsertEnter", "InsertLeave" }, {
   callback = function()
     vim.fn.jobstart({ "im-select", "1033" }, { detach = true })
