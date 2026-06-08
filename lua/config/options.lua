@@ -23,7 +23,7 @@ vim.opt.listchars = {
   conceal = "+", -- 被隐藏的字符
   nbsp = "&", -- 非断行空格
 }
-vim.g.snacks_scroll = false
+vim.g.snacks_scroll = false -- 禁用 snacks 插件的滚动功能
 vim.api.nvim_create_autocmd({ "InsertEnter", "InsertLeave" }, {
   callback = function()
     vim.fn.jobstart({ "im-select", "1033" }, { detach = true })
