@@ -5,5 +5,6 @@ end
 -- 字体
 vim.o.guifont = "SauceCodePro Nerd Font"
 
--- 输入时隐藏鼠标
-vim.g.neovide_hide_mouse_when_typing = true
+-- 支持中文输入法
+vim.g.neovide_input_ime = true
+
