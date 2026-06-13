@@ -23,5 +23,3 @@ vim.opt.listchars = {
   conceal = "+", -- 被隐藏的字符
   nbsp = "&", -- 非断行空格
 }
-
-require("config.neovide")
