@@ -6,3 +6,17 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+vim.api.nvim_create_autocmd({ "InsertEnter", "InsertLeave" }, {
+  callback = function()
+    vim.fn.jobstart({ "im-select", "1033" }, {
+      on_exit = function()
+        vim.schedule(function()
+          vim.fn.jobstart({ "im-select", "2052" }, {
+            detach = true,
+          })
+        end)
+      end,
+    })
+  end,
+})

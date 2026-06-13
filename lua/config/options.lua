@@ -24,18 +24,4 @@ vim.opt.listchars = {
   nbsp = "&", -- 非断行空格
 }
 
-vim.api.nvim_create_autocmd({ "InsertEnter", "InsertLeave" }, {
-  callback = function()
-    vim.fn.jobstart({ "im-select", "1033" }, {
-      on_exit = function()
-        vim.schedule(function()
-          vim.fn.jobstart({ "im-select", "2052" }, {
-            detach = true,
-          })
-        end)
-      end,
-    })
-  end,
-})
-
 require("config.neovide")
