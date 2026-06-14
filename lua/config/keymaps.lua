@@ -38,9 +38,9 @@ vim.keymap.set("i", "<Esc>", "<Esc>l", { desc = "退出插入并右移一位" })
 vim.keymap.set("n", "<S-PageUp>", "<cmd>BufferLineMovePrev<cr>", { desc = "Buffer 左移" })
 vim.keymap.set("n", "<S-PageDown>", "<cmd>BufferLineMoveNext<cr>", { desc = "Buffer 右移" })
 
--- -- Shift + j / k → 快速移动 5 行（n + v 模式）
--- vim.keymap.set({ "n", "v" }, "J", "5j", { desc = "下移 5 行" })
--- vim.keymap.set({ "n", "v" }, "K", "5k", { desc = "上移 5 行" })
+-- Shift + j / k → 快速移动 5 行（n + v 模式）
+vim.keymap.set({ "n", "v" }, "J", "5j", { desc = "下移 5 行" })
+vim.keymap.set({ "n", "v" }, "K", "5k", { desc = "上移 5 行" })
 
 -- d / x 使用黑洞寄存器（n + v 模式）
 vim.keymap.set({ "n", "v" }, "d", '"_d', { desc = "删除（黑洞寄存器）" })
